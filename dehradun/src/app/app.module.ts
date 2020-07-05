@@ -10,6 +10,10 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AboutComponent } from './about/about.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+ 
+ 
  
 
 @NgModule({
@@ -20,14 +24,18 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ContactusComponent,
     AboutComponent,
-    EmployeeComponent
+    EmployeeComponent,
+     
+    AddemployeeComponent,
+   
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ ],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

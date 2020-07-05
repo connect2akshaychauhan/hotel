@@ -1,1 +1,41 @@
-<p>employee works!</p>
+
+  
+<div class="container"style="background-color:#f2f2f2;padding-right:50px;border-radius: 5px 5px 5px 5px">
+  <div class="row">
+  <div class="col-md-6"> 
+<h1 class=""style="font-weight:600">Employee Table</h1>
+</div>
+<div class="col-md-3"style="padding-top:20px"> 
+  
+  </div>
+  <div class="col-md-3"style="padding-top:25px"> 
+    <button type="" class="btn btn-warning"> <li><a routerLink="/addemployee">Add New Employee</a></li></button>
+    
+    </div>
+</div>
+</div>
+<table class="table">
+   
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees.data"> 
+      <td></td>
+      <td>   {{employee. employee_name}}
+      </td>
+      <td> {{employee. employee_age}}</td>
+      <td>{{employee. employee_salary}}</td>
+      <td><button type="Edit" class="btn btn-warning"style="padding-left:10px">Edit</button>  <button type="Delete" class="btn btn-danger"style="margin-left:10px">Delete</button></td>
+      
+    </tr>
+     
+  </tbody>
+</table>
+ 
