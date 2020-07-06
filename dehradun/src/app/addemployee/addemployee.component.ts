@@ -12,4 +12,5 @@ export class AddemployeeComponent implements OnInit {
   ngOnInit(): void {
   }
 dynName="akshay";
+mypro:Boolean;
 }
