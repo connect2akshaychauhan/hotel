@@ -13,4 +13,10 @@ export class AddemployeeComponent implements OnInit {
   }
 dynName="akshay";
 mypro:Boolean;
+
+
+msg:string="";
+addemployee(){
+this.msg="employee added in table";
+}
 }
