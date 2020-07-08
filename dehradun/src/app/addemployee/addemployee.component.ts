@@ -13,8 +13,7 @@ export class AddemployeeComponent implements OnInit {
   }
 dynName="akshay";
 mypro:Boolean;
-
-
+user:string="akshay";
 msg:string="";
 addemployee(){
 this.msg="employee added in table";

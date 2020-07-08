@@ -12,7 +12,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './data.service';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
- 
+ import{FormsModule} from'@angular/forms'
  
  
 
@@ -34,6 +34,7 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
